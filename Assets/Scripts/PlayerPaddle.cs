@@ -17,7 +17,7 @@ public class PlayerPaddle : MonoBehaviour
 
     
     {
-        transform.Translate(Vector2.up * directionInput * 5 * Time.deltaTime);
+        transform.Translate(Vector2.up * directionInput * 5 * Time.deltaTime); // delta é considerado um intervalo de tempo
     }
     public void OnMove(InputValue value)
     {
