@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 48128542}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -304,8 +304,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9bac6d4a0e2da4e88ec0d11815948a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GerenciadorPontos
-  textoPlacar: {fileID: 886653240}
-  pontuacao: 0
 --- !u!1 &230296653
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +499,7 @@ GameObject:
   - component: {fileID: 404884619}
   - component: {fileID: 404884618}
   - component: {fileID: 404884620}
+  - component: {fileID: 404884621}
   m_Layer: 0
   m_Name: Leftwall
   m_TagString: Untagged
@@ -629,6 +628,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &404884621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404884617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b921fa7b780684b4daa2ada0f552d124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wall
 --- !u!1 &670270193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,7 +1824,7 @@ MonoBehaviour:
   playerScore: 0
   aiScore: 0
   playerScoreText: {fileID: 1298833757}
-  aiScoreText: {fileID: 0}
+  aiScoreText: {fileID: 886653240}
 --- !u!4 &1541700821
 Transform:
   m_ObjectHideFlags: 0
@@ -1840,6 +1851,7 @@ GameObject:
   - component: {fileID: 2038005304}
   - component: {fileID: 2038005303}
   - component: {fileID: 2038005305}
+  - component: {fileID: 2038005306}
   m_Layer: 0
   m_Name: Rightwall
   m_TagString: Untagged
@@ -1968,6 +1980,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2038005306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038005302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b921fa7b780684b4daa2ada0f552d124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wall
 --- !u!1 &2066144261
 GameObject:
   m_ObjectHideFlags: 0
