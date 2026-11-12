@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
+
+
     [SerializeField] private GameManager gameManager;
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -16,6 +18,8 @@ public class Wall : MonoBehaviour
             {
                 gameManager.AIAddPoint();
             }
+
+            other.gameObject.GetComponent<Ball>().ResetBall();
         }
     }
 }
