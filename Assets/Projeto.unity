@@ -255,6 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   ballSpeed: 10
   rotationBallSpeed: 360
+  timeToMoveBall: 1
 --- !u!58 &48128541
 CircleCollider2D:
   m_ObjectHideFlags: 0
