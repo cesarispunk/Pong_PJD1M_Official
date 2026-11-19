@@ -65,5 +65,7 @@ public class Ball : MonoBehaviour
         sr.enabled = true;
 
         Launch();
+
+        // corrotina é um evento assincrônico, acontece independente do tempo do jogo
     }
 }
